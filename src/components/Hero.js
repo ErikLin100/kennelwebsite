@@ -25,7 +25,9 @@ const Hero = () => {
   return (
     <div className="relative h-screen">
       {/* Navbar */}
-      <Navbar isVisible={showNavbar} />
+      <div className="navbar-container"> {/* Apply the navbar-container class */}
+        <Navbar isVisible={showNavbar} />
+      </div>
 
       <div className="bg-image-container-hero z-0" style={{ zIndex: -1 }}>
         <img src={shiba3_1} alt="logo" className="w-full h-full object-cover" />
@@ -35,7 +37,8 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white z-10">
         <div className="blurbox bg-gray-100 bg-opacity-50 p-8 rounded-lg">
           <h1 className="text-4xl font-bold text-shadow-black text-center">
-            Welcome to our Shiba Inu Kennel Website
+            Welcome to our Shiba Inu Kennel Website Hajime
+            
           </h1>
           <p className="text-lg text-center">
             Discover the world of Shiba Inus and our adorable puppies.
